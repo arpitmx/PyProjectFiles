@@ -41,7 +41,7 @@ if (inp ==3):
 if (inp ==4):
     
     app=[]
-	f=open('APPLICANT.DAT','rb+')
+	f=open('data.DAT','rb+')
 	id=int(input('Enter id to search  '))
 	qual=input('Enter new qualification  ')
 	try:
@@ -53,7 +53,7 @@ if (inp ==4):
 				f.seek(rp)
 				pickle.dump(app,f)
 				break
-	except EOFError:
+	except EOFError:  
 		f.close()
 
 if(inp==5):
